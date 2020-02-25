@@ -2,7 +2,7 @@
 Application Context and Dependency Injection in Springboot 2
 
 [**Description of this repository**]<br>
-This is a simple example of how to use the Application Context and Dependency Injection within an Spring Boot 2 application.
+This is a simple example of how to use the Application Context and Dependency Injection within a Spring Boot 2 application.
 
 This repository is a single-project repo with Git version control.
 
@@ -24,6 +24,3 @@ linkedin.com/in/danielpm1982<br>
 Brazil<br>
 <br>
 .
-
-
-
