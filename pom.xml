@@ -12,7 +12,7 @@
 	<artifactId>springboot2-ac-di</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>springboot2-ac-di</name>
-	<description>This is a simple example of how to use the Application Context and Dependency Injection within an Spring Boot 2 application.</description>
+	<description>This is a simple example of how to use the Application Context and Dependency Injection within a Spring Boot 2 application.</description>
 	<properties>
 		<java.version>13</java.version>
 	</properties>
