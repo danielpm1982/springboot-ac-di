@@ -1,5 +1,6 @@
 package com.danielpm1982.springboot2acdi.controller;
 import com.danielpm1982.springboot2acdi.service.GreetingServiceProperty;
+import com.danielpm1982.springboot2acdi.service.GreetingServiceSetter;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -8,7 +9,7 @@ class SetterInjectedControllerTest {
     @BeforeEach
     void setUp() {
         setterInjectedController = new SetterInjectedController();
-        setterInjectedController.setGreetingService(new GreetingServiceProperty()); //manually simulating the instantiation and setter injection of the GreetingService bean at the Controller, for later being used at the Controller methods. When injected, the bean instance would be accessable through a Controller property to all Controller methods, as in all 3 types of bean injection. This would be a setter-injection strategy.
+        setterInjectedController.setGreetingService(new GreetingServiceSetter()); //manually simulating the instantiation and setter injection of the GreetingService bean at the Controller, for later being used at the Controller methods. When injected, the bean instance would be accessable through a Controller property to all Controller methods, as in all 3 types of bean injection. This would be a setter-injection strategy.
     }
     @Test
     void getGreeting() {
