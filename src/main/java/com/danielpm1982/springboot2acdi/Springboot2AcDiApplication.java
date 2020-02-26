@@ -29,3 +29,11 @@ the programmer can get one of its instances by requesting to the Application Con
 of the bean, which by default is the name of the Annotated class begining with lowercase. This instance
 from the Application Context can then be injected at the requesting class, preferably through a Constructor.
 */
+
+/*
+Then, it was added 3 Controller classes for demonstrating the 3 types of dependency injections, in this
+case a GreetingService dependency that returns a greeting for a person name argument passed to it. The
+At the JUnit5 testing classes, the GreetingService dependency, that could be a Spring bean, is then
+instantiated and manually injected at the Controllers, according to each respective injection strategy.
+See the Controller classes, the Service classes and the test classes for more.
+*/
