@@ -6,7 +6,10 @@ import org.springframework.stereotype.Controller;
 @Controller
 public class ConstructorInjectedController {
     private GreetingService greetingService;
-    public ConstructorInjectedController(@Qualifier("greetingServiceConstructor") GreetingService greetingService){
+//    public ConstructorInjectedController(@Qualifier("greetingServiceConstructor") GreetingService greetingService){
+//        this.greetingService = greetingService;
+//    }
+    public ConstructorInjectedController(GreetingService greetingService){ //Constructor injection of the GreetingService impl set as @Primary, with no need of @Qualifier
         this.greetingService = greetingService;
     }
     public String getGreeting(String name){
