@@ -1,6 +1,8 @@
 package com.danielpm1982.springboot2acdi.controller;
 import com.danielpm1982.springboot2acdi.service.GreetingService;
+import org.springframework.stereotype.Controller;
 
+@Controller
 public class ConstructorInjectedController {
     private GreetingService greetingService;
     public ConstructorInjectedController(GreetingService greetingService){

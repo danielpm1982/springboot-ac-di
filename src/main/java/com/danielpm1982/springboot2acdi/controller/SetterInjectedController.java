@@ -1,8 +1,12 @@
 package com.danielpm1982.springboot2acdi.controller;
 import com.danielpm1982.springboot2acdi.service.GreetingService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 
+@Controller
 public class SetterInjectedController {
     private GreetingService greetingService;
+    @Autowired
     public void setGreetingService(GreetingService greetingService) {
         this.greetingService = greetingService;
     }
