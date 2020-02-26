@@ -37,7 +37,7 @@ This example shows that all beans are instantiated automatically, using inversio
 the programmer can get one of its instances by requesting to the Application Context, using the name
 of the bean, which by default is the name of the Annotated class begining with lowercase. This instance
 from the Application Context can then be injected at the requesting class, preferably through a Constructor.
-For testing these features just run this main class. No test classes produced.
+The testing of this new feature can be done by running this main class. No test classes produced.
 */
 
 /*
@@ -45,7 +45,8 @@ Then, it was added 3 Controller classes for demonstrating the 3 types of depende
 case a GreetingService dependency that returns a greeting for a person name argument passed to it. The
 At the JUnit5 testing classes, the GreetingService dependency, that could be a Spring bean, is then
 instantiated and manually injected at the Controllers, according to each respective injection strategy.
-See the Controller classes, the Service classes and the test classes for more for testing these new features.
+See the Controller classes, the Service classes and the test classes for more. The testing of these new
+features can be done by running the test classes.
 */
 
 /*
@@ -55,8 +56,8 @@ bean from the Application Context and call its getGreeting() method that uses th
 already instantiated and injected, according to Annotations, at each Controller. The stereotype annotations
 used are @Service and @Component at the service package and the @Controller and @Autowired
 at the controller package. In the case of the ConstructorInjectedController no @Autowired annotation is
-necessary if only one constructor is present. The testing of these new features can be done by running this
-main class, as with the initial features. No test classes produced.
+necessary if only one constructor is present. The testing of this new feature can be done by running this
+main class. No test classes produced.
 */
 
 /*
@@ -66,4 +67,14 @@ to know which dependency implementation to use at the injection of the service i
 object, we've used another stereotype annotation: @Qualifier. So that each Controller would have a different
 @Service implementation injected according to the bean name passed to this @Qualifier annotation. The testing
 of this new feature can be done by running this main class. No test classes produced.
+*/
+
+/*
+Next, we demonstrate the use of the @Primary annotation by setting it at one of the service impl classes, namely
+the GreetingServiceConstructor class. At the ConstructorInjectedController, where that implemented and instantiated
+bean is supposed to be injected, instead of a constructor injection using @Qualifier we write another one with no
+@Qualifier, so that the @Primary notation of the injecting bean can be tested. Of course, in any other class
+where the injection of any of the GreetingService implementations is requested, and no @Qualifier has been used, it'll
+be preferably injected the @Primary impl of this service interface automatically. The testing of this new
+feature can be done by running this main class. No test classes produced.
 */
