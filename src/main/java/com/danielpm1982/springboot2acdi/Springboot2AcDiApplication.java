@@ -1,8 +1,5 @@
 package com.danielpm1982.springboot2acdi;
-import com.danielpm1982.springboot2acdi.controller.ConstructorInjectedController;
-import com.danielpm1982.springboot2acdi.controller.PropertyInjectedController;
-import com.danielpm1982.springboot2acdi.controller.SetterInjectedController;
-import com.danielpm1982.springboot2acdi.controller.WelcomeController;
+import com.danielpm1982.springboot2acdi.controller.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -26,6 +23,9 @@ public class Springboot2AcDiApplication {
 		System.out.println(((SetterInjectedController)ctx.getBean("setterInjectedController")).getGreeting("John Smith"));
 		System.out.println("Getting a ConstructorInjectedController instance and calling its getGreeting method, which uses the injected GreetingService bean:");
 		System.out.println(((ConstructorInjectedController)ctx.getBean("constructorInjectedController")).getGreeting("John Smith"));
+		System.out.println("***********************************************************************************");
+		System.out.println("Getting a MultiLangController instance and calling its getGreeting method, which uses the injected GreetingService bean:");
+		System.out.println(((MultiLangController)ctx.getBean("multiLangController")).getGreeting("John Smith"));
 	}
 }
 
@@ -77,4 +77,14 @@ bean is supposed to be injected, instead of a constructor injection using @Quali
 where the injection of any of the GreetingService implementations is requested, and no @Qualifier has been used, it'll
 be preferably injected the @Primary impl of this service interface automatically. The testing of this new
 feature can be done by running this main class. No test classes produced.
+*/
+
+/*
+We've refactored the code again to create 2 new types of service implementations, added with a @Profile annotation
+and with the same ambiguous bean name for both. We've also created a new controller for testing this multilanguage
+support use case. One of the services is selected by the english profile (or by default), the other by the spanish
+profile. The profile values are set at the application.properties. The selection of the unique service bean changes
+according to that profile value. If no value is set for the profile at the application.properties (or the code there
+is commented) the bean with the "default" profile will be selected (the english one). For more comments see the new
+created classes. The testing of this new feature can be done by running this main class. No test classes produced.
 */
