@@ -1,5 +1,5 @@
 # springboot-ac-di
-Application Context and Dependency Injection in Springboot 2
+Application Context and Dependency Injection in Spring Boot 2
 
 [**Description of this repository**]<br>
 This is a simple example of how to use the Application Context and Dependency Injection within a Spring Boot 2 application.
