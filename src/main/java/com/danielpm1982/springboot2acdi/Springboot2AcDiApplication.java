@@ -58,3 +58,12 @@ at the controller package. In the case of the ConstructorInjectedController no @
 necessary if only one constructor is present. The testing of these new features can be done by running this
 main class, as with the initial features. No test classes produced.
 */
+
+/*
+In this next feature, we've refactored the service implementations to keep 3 different implementations of
+Service, one for each type of Controller (Constructor, Property and Setter). For letting the Spring Container
+to know which dependency implementation to use at the injection of the service instances at each Controller
+object, we've used another stereotype annotarion: @Qualifier. So that each Controller would have a different
+@Service implementation injected according to the bean name passed to this @Qualifier annotation. The testing
+of this new feature can be done by running this main class. No test classes produced.
+*/
