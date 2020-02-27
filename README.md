@@ -1,4 +1,4 @@
-# springboot-ac-di
+# springboot2-ac-di
 Application Context and Dependency Injection in Spring Boot 2
 
 [**Description of this repository**]<br>
