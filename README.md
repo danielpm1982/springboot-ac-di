@@ -3,7 +3,9 @@ Application Context and Dependency Injection in Spring Boot 2
 
 [**Description of this repository**]<br>
 This is a simple example of how to use Spring Application Context and Dependency Injection, along with Inversion of Control (IoC), in a Spring Boot 2 application, following SOLID Principles and doing some basic JUnit5 unitary tests.
-Stereotype annotations used: @Service, @Component, @Profile, @Primary, @Controller, @Autowired, @Qualifier and test annotations.
+Stereotype annotations used: @Service, @Component, @Profile, @Primary, @Controller, @Autowired, @Qualifier and test annotations. For more info read the project comments at each class, mainly at the Main class. 
+© 2020 Daniel Pinheiro Maia All Rights Reserved 
+(see Copyright© License below).
 
 This repository is a single-project repo with Git version control.
 
