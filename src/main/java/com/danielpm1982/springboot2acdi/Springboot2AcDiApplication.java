@@ -49,7 +49,7 @@ When using this application, you willingly agree to comply with the Copyright© 
 link: https://github.com/danielpm1982/springboot-ac-di/blob/master/README.md .
 
 This application code is solely for individual learning purposes and is NOT INTENDED FOR ANY KIND OF COMMERCIAL
-USE, nor has warranty of any type (for more info read the Copyright© License above).
+USE, nor has warranty of any type (for more info, read the Copyright© License above).
 
 © 2020 Daniel Pinheiro Maia All Rights Reserved
 Daniel Pinheiro Maia
