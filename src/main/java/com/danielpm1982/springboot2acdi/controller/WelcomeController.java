@@ -7,3 +7,5 @@ public class WelcomeController {
         return "Welcome "+name+" !";
     }
 }
+
+//This controller simply receives a name and returns a dynamically generated greeting with the user name.

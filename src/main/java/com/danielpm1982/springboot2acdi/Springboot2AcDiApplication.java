@@ -88,3 +88,10 @@ according to that profile value. If no value is set for the profile at the appli
 is commented) the bean with the "default" profile will be selected (the english one). For more comments see the new
 created classes. The testing of this new feature can be done by running this main class. No test classes produced.
 */
+
+/*
+We've refactored the name of 3 of the implemented services, just to keep them more semantic.
+And final comments and explaining corrections have been done at all the project.
+
+THIS PROJECT IS NOW CLOSED !
+*/
