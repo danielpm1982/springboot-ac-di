@@ -29,6 +29,41 @@ public class Springboot2AcDiApplication {
 	}
 }
 
+
+/*
+*****PROJECT DESCRIPTION:*****
+(GitHub project link: https://github.com/danielpm1982/springboot-ac-di)
+*/
+
+/*
+This is a simple example of how to use Spring Application Context and Dependency Injection, along with
+Inversion of Control (IoC), in a Spring Boot 2 application, following SOLID Principles and doing some basic
+JUnit5 unitary tests.
+
+Stereotype annotations used: @Service, @Component, @Profile, @Primary, @Controller, @Autowired, @Qualifier
+and test annotations. For more info read the project comments at each class, mainly at the Main class.
+
+For more info about this project features read the comments at this class and at other classes of this project.
+
+When using this application, you willingly agree to comply with the Copyright© License at the following GitHub
+link: https://github.com/danielpm1982/springboot-ac-di/blob/master/README.md .
+
+This application code is solely for individual learning purposes and is NOT INTENDED FOR ANY KIND OF COMMERCIAL
+USE, nor has warranty of any type (for more info read the Copyright© License above).
+
+© 2020 Daniel Pinheiro Maia All Rights Reserved
+Daniel Pinheiro Maia
+danielpm1982.com
+danielpm1982@gmail.com
+linkedin.com/in/danielpm1982
+Brazil
+.
+*/
+
+/*
+*****SEQUENCE OF FEATURES ADDED:*****
+*/
+
 /*
 For now, this app receives the Application Context, gets and shows all beans names list registered at it
 and then gets specifically the 'welcomeController' bean to call its method welcome(), passes a person name,
